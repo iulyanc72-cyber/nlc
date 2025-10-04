@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calcul Castig - Home</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h2>Bine ai venit, {{ session['username'] }}!</h2>
+    <form method="POST" enctype="multipart/form-data">
+      <input type="file" name="file" accept=".csv" required>
+      <button type="submit">Procesează fișierul</button>
+    </form>
+    {% if message %}<p class="msg">{{ message }}</p>{% endif %}
+    <a href="{{ url_for('logout') }}">Deconectare</a>
+  </div>
+</body>
+</html>

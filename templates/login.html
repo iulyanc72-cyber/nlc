@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login - Calcul Castig</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h2>Autentificare</h2>
+    <form method="POST">
+      <input type="text" name="username" placeholder="Utilizator" required>
+      <input type="password" name="password" placeholder="Parolă" required>
+      <button type="submit">Conectează-te</button>
+      {% if error %}<p class="error">{{ error }}</p>{% endif %}
+    </form>
+  </div>
+</body>
+</html>
