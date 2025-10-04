@@ -1,1 +1,4 @@
-Flaskgunicornpandasreportlab
+Flask==2.3.4
+gunicorn==21.2.0
+pandas==2.1.1
+reportlab==4.1.3
