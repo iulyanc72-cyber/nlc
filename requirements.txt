@@ -1,4 +1,3 @@
-numpy==1.26.5
+Flask==2.3.2
+numpy==1.26.4
 pandas==2.1.1
-flask==2.3.4          # sau orice framework folosești
-gunicorn==20.1.0      # server WSGI pentru Render
